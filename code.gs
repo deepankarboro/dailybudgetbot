@@ -31,7 +31,7 @@ function doPost(e) {
   var amount = "";
   var username = contents.message.from.first_name + contents.message.from.last_name;
   //sendMessage(chat_id,username); //Use this to check your username so that only you can access the BOT and no one else can.
-  if(username=="<Telegram User Name1>" || username=="Telegram User Name2") //Use the users for which you want to enable the BOT. Generally, this should be family members. You can add more family members by simply using the OR function.
+  if(username=="<Telegram User Name1>" || username=="<Telegram User Name2>") //Use the users for which you want to enable the BOT. Generally, this should be family members. You can add more family members by simply using the OR function.
   {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Budget"); // Select the sheet where we would be entering the data.
   if(text=="/start" || text=="help" || text=="Help")
